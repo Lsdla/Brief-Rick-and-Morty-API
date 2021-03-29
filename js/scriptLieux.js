@@ -58,7 +58,7 @@ class Locations {
     locationCard.setAttribute("class", "lieux-card");
     locationCard.innerHTML = 
           ` <div class="lieux-card_info">
-                <img src="image/rick-and-morty-space-wallpaper-preview.jpeg" alt="" class="image">
+                <img src="../images/rick-and-morty-space-wallpaper-preview.jpeg" alt="" class="image">
                 <a class="location-name" data-url="${location.url}">Name : ${location.name}</a>
                 <p>Type : ${location.type}</p>
                 <p>Dimension : ${location.dimension}</p>
@@ -124,7 +124,7 @@ class Locations {
               lieux.innerHTML +=
                 `<div class="lieux-card">
                 <div class="lieux-card_info">
-                <img src="image/rick-and-morty-space-wallpaper-preview.jpeg" alt="" class="image">
+                <img src="../images/rick-and-morty-space-wallpaper-preview.jpeg" alt="" class="image">
                     <a class="location-name" data-url="">Name : ${planet.name}</a>
                     <p>Type : ${planet.type}</p>
                     <p>Dimension : ${planet.dimension}</p>
