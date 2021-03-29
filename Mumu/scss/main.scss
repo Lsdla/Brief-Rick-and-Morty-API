@@ -1,0 +1,129 @@
+@font-face {
+    font-family: Ricky;
+    src: url(../font/get-schwifty.ttf);
+    font-weight: bold;
+  }
+body{
+    margin: 0;
+    padding: 0;
+    color: rgb(127, 255, 0);
+    background-color: black;
+    font-family: Ricky;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.lieux{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.lieux-card{
+    width: 20%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin: 50px 10px;
+}
+.container{
+    margin-top: 25px;
+}
+.bottom{
+    display: flex;
+    flex-direction: row;
+}
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.lieux-card_image{
+    background-color: black;
+    height: 150px;
+    width: 150px;
+}
+img{
+    width: 110px;
+    height: 110px;
+    transition: all .7s;
+    cursor: pointer;
+}
+.modal-container{
+    font-size: 14px;
+}
+.image{
+    width: 250px;
+    height: 131px;
+    transition: all .7s;
+    cursor: pointer;
+}
+.location-name:hover{
+    color: #e4bfc1;
+    cursor: pointer;
+}
+.topLocation{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bottomLocation{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+.bottomLocation p{
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+.type-label{
+    margin: 10px;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: absolute; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: black;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: rgb(127, 255, 0);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #e4bfc1;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
