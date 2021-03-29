@@ -101,3 +101,12 @@ header{
 .type-label{
     margin: 10px;
 }
+.page-accueil{
+    color: rgb(127, 255, 0);
+    margin-bottom: 5%;
+}
+.mumu-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
