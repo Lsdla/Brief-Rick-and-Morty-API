@@ -1,0 +1,20 @@
+// ce fichier nous sert à créer des bouts de codes qui seront utilisés avec des paramètres 
+//* * * * * * * * * * * * * * *  ** * * * * * * ** * * * * * ** * * * * * * *
+
+@mixin absolute-el ($top, $right, $bottom, $left, $x, $y) {
+    position: absolute;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+    transform: translate($x,$y);
+}
+// autre exemple de bout de code réutilisable avec paramètre. 
+
+@mixin pseudo-el ($dipplay: block, $pos: absolute) {
+    display: $dipplay;
+    position: $pos;
+}
+
+// cette fois pour pourvoir l'utiliser dans le fichier style.scss on doit ecrire : 
+// @include absolute.el(50%,0,0,50%,-50%,-50%) par exemple. 
