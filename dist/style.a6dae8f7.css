@@ -1,0 +1,523 @@
+@font-face {
+  font-family: "Blood";
+  src: url("/Blood-Thirst.023e918d.ttf");
+}
+@font-face {
+  font-family: "Schwifty";
+  src: url("/get_schwifty.f719c796.ttf");
+}
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+body .epidodes {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body .epidodes {
+  font-family: "Schwifty", sans-serif;
+  font-weight: bold;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  overflow: auto;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  border: 1px solid #888;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.close {
+  color: #aaa;
+  position: relative;
+  float: right;
+  cursor: pointer;
+  font-size: 50px;
+  padding: 0 10px 0 0;
+  font-weight: bold;
+  color: chartreuse;
+}
+
+.closebtn:hover {
+  color: #e4bfc1;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal img {
+  width: 100%;
+  height: auto;
+}
+
+.character {
+  width: 150px;
+  height: 300px;
+  padding: 10px;
+}
+
+@font-face {
+  font-family: "my_font5";
+  src: url("https://raw.githubusercontent.com/MANOJ-M-01/Assets/main/fonts/FIGHTER%20BRUSH.ttf");
+}
+@font-face {
+  font-family: "my_font6";
+  src: url("https://raw.githubusercontent.com/MANOJ-M-01/Assets/main/fonts/Fusterd%20Brush.otf");
+}
+fieldset {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  transition: all 0.35s ease-in-out;
+}
+
+fieldset:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+}
+
+.text_head {
+  background: linear-gradient(to right, #5E2A73 0%, #bd0835 40%, #bd4a08 60%, #f0a608 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-family: my_font6;
+  font-size: 6em;
+  font-weight: 100;
+  margin: 0;
+  line-height: 50px;
+  transform: rotateZ(-15deg);
+  margin-bottom: 30px;
+}
+
+.text {
+  background: linear-gradient(to right, #bd4a08 0%, #bd0835 40%, #f0a608 60%, #5E2A73 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-family: my_font5;
+  font-size: 2em;
+  font-weight: 100;
+  margin: 0;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+.card img {
+  width: 110px;
+  height: auto;
+  cursor: pointer;
+}
+.card img:hover {
+  transform: scale(1.5, 1.5);
+  transition: 0.5s ease-in-out;
+  filter: grayscale(100%);
+}
+.card .container {
+  color: #e9bd34;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+/*
+Author:MANOJ M;
+Link :https://codepen.io/manoj-m-01
+*/
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+.acceuil {
+  text-align: center;
+}
+.acceuil#img_acceuil {
+  height: 400px;
+  width: 800px;
+}
+.acceuil.acceuil h1 {
+  color: chartreuse;
+  text-align: center;
+  font-size: 90px;
+}
+
+.page123 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 90px;
+}
+.page123.page123 h3 {
+  color: chartreuse;
+  text-align: center;
+}
+.page123.page123 img {
+  height: 80px;
+  width: 90px;
+  border-radius: 9px;
+}
+
+.copyright {
+  margin-top: 150px;
+  color: chartreuse;
+  font-size: 15px;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.characterNom, .titrePersonnages, .openPersonnages, h2, label {
+  color: chartreuse;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.radios {
+  margin-bottom: 120px;
+}
+.radios.radios input {
+  margin-right: 20px;
+}
+
+h3 {
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.openPersonnages {
+  border: solid 2px chartreuse;
+  height: auto;
+  width: 250px;
+  text-align: center;
+  position: fixed;
+  top: 0%;
+  left: 30%;
+  transform: translate(50%, 40%);
+}
+.openPersonnages.openPersonnages ul {
+  list-style-type: none;
+}
+.openPersonnages.openPersonnages img {
+  height: 200px;
+  border-radius: 3px;
+  border-radius: 9px;
+}
+.openPersonnages.openPersonnages li {
+  height: 28px;
+  color: red;
+  margin-bottom: -9px;
+}
+
+#imgPerso {
+  height: 50%;
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(50%, 5%);
+  border-radius: 4px;
+}
+
+.body {
+  margin: 0;
+  padding: 0;
+  color: chartreuse;
+  background-color: black;
+  font-family: "Blood", sans-serif;
+}
+
+.header_mumu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.lieux {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-family: "Schwifty", sans-serif;
+}
+
+.lieux-card {
+  width: 20%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin: 50px 10px;
+}
+
+.container {
+  margin-top: 25px;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: row;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.lieux-card_image {
+  background-color: black;
+  height: 150px;
+  width: 150px;
+}
+
+.img-resident {
+  width: 130px;
+  height: 130px;
+  transition: all 0.7s;
+  cursor: pointer;
+}
+
+.modal-container {
+  font-size: 14px;
+}
+
+.image {
+  width: 250px;
+  height: 131px;
+  transition: all 0.7s;
+  cursor: pointer;
+}
+
+.imgTop {
+  width: 230px;
+  height: auto;
+  border-radius: 10%;
+}
+
+.location-name:hover {
+  color: #e4bfc1;
+  cursor: pointer;
+}
+
+.topLocation {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  font-family: "Schwifty", sans-serif;
+}
+
+.bottomLocation {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+}
+
+.bottomLocation p {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.type-label {
+  margin: 10px;
+}
+
+.page-accueil {
+  color: chartreuse;
+  margin-bottom: 5%;
+}
+
+.mumu-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: absolute;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: black;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-family: "Schwifty", sans-serif;
+}
+
+/* The Close Button */
+.close {
+  color: chartreuse;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #e4bfc1;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+body {
+  background-color: #0e0c0c;
+  height: 100vh;
+  font-size: 1rem;
+  font-family: "Blood", sans-serif;
+  color: greenyellow;
+}
+body .container {
+  font-size: 0.8rem;
+}
+body .container--image {
+  background-color: #2e81ce;
+}
+body .container--image__small {
+  height: 2px;
+}
+body .container--text {
+  color: chartreuse;
+  font-size: 2rem;
+}
+.img {
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  bottom: 50%;
+  left: 3%;
+  transform: translate(-50%, -50%);
+}
+
+.app_lists ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+}
+.app_lists ul li .card {
+  width: 300px;
+  height: 400px;
+  margin-bottom: 30px;
+  border: 1px solid #07e607;
+}
+
+/*# sourceMappingURL=/style.a6dae8f7.css.map */

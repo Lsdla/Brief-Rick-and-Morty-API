@@ -1,0 +1,54 @@
+// ce fichier permet de créer des bouts de codes comme mixin mais cette fois sans les paramètres 
+
+%flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// pour pouvoir l'utiliser dans le fichier style.scss on doit faire ceci:
+// @extend %flex-center        par exemple.
+
+%flexArrow{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+%flexCenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+%flexBetween{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+%flexCenterWrap{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+%absoluteCenter{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%)
+}
+
+%DivTitre{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%policeTitre{
+    font-family: $Schwifty;
+    font-weight: bold;
+}

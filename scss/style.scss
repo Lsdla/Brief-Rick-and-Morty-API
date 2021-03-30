@@ -1,0 +1,113 @@
+// sass --style=compressed pour compresser 
+
+// 1ère méthode on link le style.css dans index.html:
+// pour compiler on utilise une commande sass --watch pour dire que notre fichier est à l'écoute des changements 
+// ensuite on met à partir de quel fichier on écoute dans notre cas à partir de scss/style.scss
+// et la dernière c'est pour indiquer où compiler c'est à dire css/style.css
+
+// ça donne ça à la fin : sass --watch scss/style.scss css/style.css
+
+
+// // 2ème méthode on link le style.scss dans index.html:
+// on utilse parcel pour tt compiler et dans cette méthode le dossier dist va être créer et dedans il génére un fichier css à partir de ce qu'on a créé en scss.
+
+
+// on commance à importer le fichier _variables car il contient nos variables qui sont aussi utilisées dans les autres fichiers 
+// les erreurs à éviter : 
+//  1 - bien nommer les variables   
+//  2 - les mixins servent à avoir des bouts de codes avec des paramètres dedans 
+//  3 - les placeholders c'est comme les mixins sauf que cette fois ci c'est sans les paramètres 
+
+@import './modules/font';
+@import './variables'; // les underscores pour dire que ces des fichiers qu'on a importer . c'est des bonnes pratiques dans le style .css
+@import './mixins';
+@import './placeholders';
+@import './modules/modal';
+@import './modules/card';
+@import './modules/navbarFullScreen';
+@import './alexis';
+@import './mumu';
+@import './modules/modalMumu';
+
+
+body {
+    background-color: rgb(14, 12, 12);
+    height:100vh;
+    font-size: 1rem;
+    font-family: $Blood;
+    color: greenyellow;
+    .container {
+        font-size: 0.8rem;
+        &--image {
+            background-color: $blue;
+            &__small {
+                height: 2px;
+            }
+        }
+        &--text {
+            color: $vertDuTexte;
+            font-size: $policeTitre;
+        }
+
+    }
+    .epidodes{
+        @extend %DivTitre;
+        @extend %policeTitre;
+    }
+}
+
+.img{
+    @include absolute-el (50%, 2%, 50%, 3%, -50%, -50%);
+    @extend %flex-center;
+}
+
+.app_lists{
+    ul{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        list-style-type: none;
+        padding: 0;
+        li{
+            .card{
+                width: 300px;
+                height: 400px;
+                margin-bottom: 30px;
+                border: 1px solid rgb(7, 230, 7); 
+                
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+// *{
+//     margin: 0;
+//     padding: 0;
+//     box-sizing: border-box;
+// }
+
+// .container{
+//     display: flex;
+//     justify-content: space-around;
+//     flex-wrap: wrap;
+
+// }
+
+// section{
+//     background-color: rgb(32, 140, 202);
+//     border-radius: 15px;
+//     width: 200px;
+//     margin: 60px;
+//     border: 1px solid black;
+//     padding-bottom: 30px;
+// }
+
